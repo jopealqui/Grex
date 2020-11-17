@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+}
+
+.back_cad {
+    width: auto;
+    height: auto;
+    padding: 15px; 
+    border:1px solid #ccc;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+}
+
+#nome {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#email {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#senha {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#senha_conf {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#data_nasc {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+#cidade {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+textarea {
+    line-height: 20px;
+    width: 300px;
+    height: 90px;
+    resize: none;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#cnh {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#rg {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#cpf {
+    width: 300px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    width: auto;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
