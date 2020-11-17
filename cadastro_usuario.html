@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passageiro</title>
+    <link rel="stylesheet" href="css/cadastro_usuario.css">
+</head>
+
+<body>
+    <h1>cadastro do passageiro</h1>
+    <div class="back_cad">
+        <form name="usuario" accept-charset="UTF-8">
+            <label for="nome">Nome: </label> <br>
+            <input name="nome" required="required" id="nome" placeholder="&nbsp Nome" type="text" autofocus>
+
+            <br><br>
+
+            <label for="email">E-mail: </label> <br>
+            <input name="email" required="required" id="email" placeholder="&nbsp Email" type="text">
+
+            <br><br>
+
+            <label for="senha">Senha: </label> <br>
+            <input name="senha" required="required" id="senha" placeholder="&nbsp Senha" type="password">
+
+            <br><br>
+
+            <label for="senha_conf">Confirme sua senha: </label> <br>
+            <input name="senha_conf" required="required" id="senha_conf" placeholder="&nbsp Confirme sua senha" type="password">
+
+            <br><br>
+
+            <label for="data_nasc">Data de nascimento: </label> <br>
+            <input name="data_nasc" required="required" id="data_nasc" type="date">
+
+            <br><br>
+
+            <label for="cidade">Sua cidade: </label> <br>
+            <select required="required" id="cidade" name="cidade">
+                <option value="" selected="selected">selecione sua cidade</option>
+                <option value="1">São Paulo</option>
+                <option value="2">Rio de Janeiro</option>
+                <option value="3">Belo Horizonte</option>
+                <option value="4">Brasilia</option>
+            </select>
+
+            <br><br>
+
+            <label for="limitacao">Descreva sua limitação: </label> <br>
+            <textarea name="limitacao" id="limitacao" cols="30" rows="10" placeholder="&nbsp descreva sua limitação" required></textarea>
+
+            <br>
+
+            <h4>Necessita de acompanhante?</h4>
+            <input type="radio" name="opcao" id="sim" value="sim"><label for="sim">Sim</label>
+            <input type="radio" name="opcao" id="nao" value="nao" checked><label for="nao">Não</label>
+
+            <br><br>
+
+            <input type="submit" id="cadastrar" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>
