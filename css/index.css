@@ -1,0 +1,67 @@
+body {
+    background-image: url(thumb-1920-1069102.jpg);
+}
+
+header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.cadastros {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bm {
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 0px;
+}
+
+#bp {
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: 0px;
+}
+
+#email {
+    width: 200px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#senha {
+    width: 200px;
+    border:1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: auto;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
