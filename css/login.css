@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robotocem:wght@100&display=swap');
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -10,6 +14,7 @@ main {
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #imagem {
@@ -21,6 +26,7 @@ main {
 #email {
     width: 300px;
     height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
     border-radius: 10px 10px 10px 10px;
 }
@@ -28,6 +34,7 @@ main {
 #senha {
     width: 300px;
     height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
     border-radius: 10px 10px 10px 10px;
 }
@@ -49,11 +56,70 @@ main {
 }
 
 #direita {
-    width: auto;
+    width: 500px;
     height: 694px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
+}
+
+#titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#lEmail {
+    font-family: 'Robotocem', sans-serif;
+
+}
+
+#lSenha {
+    font-family: 'Robotocem', sans-serif;
+
+}
+
+#lembrar {
+    font-family: 'Robotocem', sans-serif;
+    margin: 0px;
+}
+
+#l {
+    width: 100px;
+    height: auto;
+}
+
+#r {
+    width: 100px;
+    height: auto;
+}
+
+#lembrar_esqueceu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#check {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#esqueceu {
+    font-family: 'Robotocem', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#cadastro {
+    font-family: 'Robotocem', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#c {
+width: auto;
+height: auto;
 }
