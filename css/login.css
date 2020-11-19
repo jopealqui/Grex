@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+main {
+    margin: 0px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#imagem {
+    margin: 0px;
+    width: auto;
+    height: auto;
+}
+
+#email {
+    width: 300px;
+    height: 30px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#senha {
+    width: 300px;
+    height: 30px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#entrar {
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
+}
+
+#formulario {
+    width: 300px;
+    height: auto;
+
+}
+
+#direita {
+    width: auto;
+    height: 694px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
