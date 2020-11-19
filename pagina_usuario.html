@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="utf-8" />
-	<script type='text/javascript'>
+    <script type='text/javascript'>
         var map;
         var directionsManager;
+        function destino()
+        {
+            console.log(document.getElementById(endereco));
+            return document.getElementById(endereco);
+        }
+
+
 
         function GetMap()
         {
             map = new Microsoft.Maps.Map('#myMap', {});
 
+            navigator.geolocation.getCurrentPosition(function (position) 
+            {
+            var loc = new Microsoft.Maps.Location(
+                position.coords.latitude,
+                position.coords.longitude);
+
+            //Add a pushpin at the user's location.
+            var pin = new Microsoft.Maps.Pushpin(loc);
+            map.entities.push(pin);
+
+            //Center the map on the user's location.
+            map.setView({ center: loc, zoom: 15 });
+            });
+
             //Load the directions module.
-            Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
+            Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function ()
+            {
                 //Create an instance of the directions manager.
                 directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
-
+           
                 //Create waypoints to route between.
-                var seattleWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: 'Seatle, WA' });
-                directionsManager.addWaypoint(seattleWaypoint);
+                var spWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: loc});
+                directionsManager.addWaypoint(spWaypoint);
 
-                var workWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: 'Redmond, WA' });
-                directionsManager.addWaypoint(workWaypoint);
+                var dkWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: destino()});
+                directionsManager.addWaypoint(dWaypoint);
 
                 //Add event handlers to directions manager.
                 Microsoft.Maps.Events.addHandler(directionsManager, 'directionsError', directionsError);
@@ -37,7 +60,7 @@
             var routeIdx = directionsManager.getRequestOptions().routeIndex;
 
             //Get the distance of the route, rounded to 2 decimal places.
-            var distance = Math.round(e.routeSummary[routeIdx].distance * 100)/100;
+            var distance = Math.round(e.routeSummary[routeIdx].distance * 100) / 100;
 
             //Get the distance units used to calculate the route.
             var units = directionsManager.getRequestOptions().distanceUnit;
@@ -60,10 +83,16 @@
             alert('Error: ' + e.message + '\r\nResponse Code: ' + e.responseCode)
         }
     </script>
-    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnOeSZ6a7LgcnBLVjmZ4xfQWIWZjzKv7bDwgyRk-W4NlkGnZGQdk5atUjsunU5yH' async defer></script>
+    <script type='text/javascript'
+        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnOeSZ6a7LgcnBLVjmZ4xfQWIWZjzKv7bDwgyRk-W4NlkGnZGQdk5atUjsunU5yH'
+        async defer></script>
 </head>
+
 <body>
     <div id="myMap" style="position:relative;width:800px;height:600px;"></div>
     <div id='routeInfoPanel'></div>
+    <input type="text" name="endereco" id="endereco">
+    <button onclick="destino()">enviar</button>
 </body>
+
 </html>
