@@ -33,7 +33,6 @@ CREATE TABLE Motorista (
     RG  INT NOT NULL,
     CPF INT NOT NULL,
     Avaliacao FLOAT,
-    CONSTRAINT fk_ID_Carro FOREIGN KEY (ID_Carro) REFERENCES Carro (ID_Carro),
     PRIMARY KEY (ID_Motorista)
 ) CHARSET = utf8 ;
 
