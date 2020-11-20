@@ -9,55 +9,64 @@
 </head>
 
 <body>
-    <h1>Cadastro do passageiro</h1>
-
-    <div id="main">
-        <div id="first"></div>
-        <div class="back_cad">
-            <form name="usuario" accept-charset="UTF-8">
-                <label for="nome">Nome: </label> <br>
-                <input name="nome" required="required" id="nome" placeholder="&nbsp Nome" type="text" autofocus>
-
-                <br><br>
-
-                <label for="email">E-mail: </label> <br>
-                <input name="email" required="required" id="email" placeholder="&nbsp Email" type="text">
-
-                <br><br>
-
-                <label for="senha">Senha: </label> <br>
-                <input name="senha" required="required" id="senha" placeholder="&nbsp Senha" type="password">
-
-                <br><br>
-
-                <label for="senha_conf">Confirme sua senha: </label> <br>
-                <input name="senha_conf" required="required" id="senha_conf" placeholder="&nbsp Confirme sua senha"
-                    type="password">
-
-                <br><br>
-
-                <label for="data_nasc">Data de nascimento: </label> <br>
-                <input name="data_nasc" required="required" id="data_nasc" type="date">
-
-                <br><br>
-
-                <label for="limitacao">Descreva sua limitação: </label> <br>
-                <textarea name="limitacao" id="limitacao" cols="30" rows="10" placeholder="&nbsp descreva sua limitação"
-                    required></textarea>
-
-                <br>
-
-                <h4>Necessita de acompanhante?</h4>
-                <input type="radio" name="opcao" id="sim" value="sim"><label for="sim">Sim</label>
-                <input type="radio" name="opcao" id="nao" value="nao" checked><label for="nao">Não</label>
-
-                <br><br>
-
-                <input type="submit" id="cadastrar" value="Cadastrar">
-            </form>
+    <main>
+        <div id="imagem">
+            <img src="css/img/people-with-disabilities-friends-disable-persons-wheelchair-with-assistants-happy-disabled-handicapped-characters_176516-127.jpg  " id="motorista" alt="motorista">
         </div>
-        <div id="third"></div>
-    </div>
+        <div id="direita">
+            <div id="l"></div>
+            <div id="formulario">
+                <h1 id="titulo">Faça seu cadastro</h1> <br>
+                <form name="usuario" accept-charset="UTF-8">
+                    <label for="nome">Nome: </label> <br>
+                    <input name="nome" required="required" id="nome" type="text" autofocus>
+
+                    <br><br>
+
+                    <label for="email">E-mail: </label> <br>
+                    <input name="email" required="required" id="email" type="text">
+
+                    <br><br>
+
+                    <label for="senha">Senha: </label> <br>
+                    <input name="senha" required="required" id="senha" type="password">
+
+                    <br><br>
+
+                    <label for="senha_conf">Confirme sua senha: </label> <br>
+                    <input name="senha_conf" required="required" id="senha_conf" type="password">
+
+                    <br><br>
+
+                    <label for="data_nasc">Data de nascimento: </label> <br>
+                    <input name="data_nasc" required="required" id="data_nasc" type="date">
+
+                    <br><br>
+
+                    <label for="limitacao">Descreva sua limitação: </label> <br>
+                    <textarea name="limitacao" cols="30" rows="10" required></textarea>
+
+                    <br><br>
+
+                    <p>Necessita de acompanhante?</p> <br>
+                    <input type="radio" name="opcao" id="sim" value="sim"><label for="sim">Sim</label>
+                    <input type="radio" name="opcao" id="nao" value="nao" checked><label for="nao">Não</label>
+
+                    <br><br>
+
+                    <input type="submit" id="cadastrar" value="Cadastrar">
+
+                    <br><br>
+    
+                </form>
+            </div>
+            <div id="r"></div>
+            <br><br>    
+            <a href="login.html" id="login">
+                <p>Já tem uma conta? Faça login</p>
+            </a>
+        </div>
+    </main>
 </body>
 
 </html>
