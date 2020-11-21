@@ -1,103 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robototres:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robotocem:wght@100&display=swap');
+
 body {
-    background-color: #5db0e0;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-}
-
-#first {
-    width: 300px;
-}
-
-#third {
-    width: 300px;
-}
-
-#main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.back_cad {
+main {
+    margin: 0px;
     width: auto;
     height: auto;
-    padding: 15px; 
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: right;
+}
+
+#imagem {
+    margin: 0px;
+    width: auto;
+    height: auto;
 }
 
 #nome {
     width: 300px;
+    height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
 }
 
 #email {
     width: 300px;
+    height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
 }
 
 #senha {
     width: 300px;
+    height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #senha_conf {
     width: 300px;
+    height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #data_nasc {
     width: 300px;
+    height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
     text-align: center;
+    font-family: 'Robototres', sans-serif;
 }
 
-#cidade {
+#cnh {
     width: 300px;
+    height: 30px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#rg {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#cpf {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#cadastrar {
+    height: 35px;
+    width: 300px;
     text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#formulario {
+    width: 300px;
+    height: auto;
+
+}
+
+#direita {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 textarea {
-    line-height: 20px;
     width: 300px;
-    height: 90px;
-    resize: none;
+    height: 100px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
 }
 
-input[type=submit]{
-    display: block;
-    background-color: #ccc;
-    height: 35px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Robotocem', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#l {
     width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
+    height: auto;
 }
 
-#sim {
-    cursor: pointer;
+#r {
+    width: 100px;
+    height: auto;
 }
 
-#nao {
-    cursor: pointer;
+#login {
+    font-family: 'Robotocem', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#c {
+width: auto;
+height: auto;
 }
