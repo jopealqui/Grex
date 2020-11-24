@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+#pagina {
+  height: 670px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#motorista {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+#passageiro {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+}

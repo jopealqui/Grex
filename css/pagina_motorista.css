@@ -1,3 +1,88 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#check {
+	display: none;
+}
+
+#check:checked ~ .barra {
+	-webkit-transform: translate(300px);
+	   -moz-transform: translate(300px);
+	    -ms-transform: translate(300px);
+	     -o-transform: translate(300px);
+	        transform: translate(300px);
+}
+
+.icone {
+	font-size: 30px;
+	position: fixed;
+  margin: 15px;
+	z-index: 9998;
+	cursor: pointer;
+}
+
+.barra {
+	width: 300px;
+	height: 100%;
+	position: absolute;
+  z-index: 9997;
+	background-color: white;
+	left: -300px;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+#lEndereco {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+#principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+br {
+  height: 10px;
+}
+
+#endereco {
+    width: 260px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#enviar {
+    height: 35px;
+    width: 260px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#grex {
+    font-family: 'Roboto', sans-serif;
+    width: 100px;
 }

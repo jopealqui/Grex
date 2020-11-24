@@ -1,114 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robototres:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robotocem:wght@100&display=swap');
+
 body {
-    background-color: #5db0e0;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
 }
 
-h1 {
-    color: white;
-    text-align: center;
-}
-
-#first {
-    width: 300px;
-}
-
-#third {
-    width: 300px;
-}
-
-#main {
+main {
+    margin: 0px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-.back_cad {
+#imagem {
+    margin: 0px;
+    width: auto;
+    height: auto;
+}
+
+#nome {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#email {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#senha {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#senha_conf {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#data_nasc {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    font-family: 'Robototres', sans-serif;
+}
+
+#cnh {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#rg {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#cpf {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#cadastrar {
+    height: 35px;
+    width: 300px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
+    font-family: 'Robototres', sans-serif;
+}
+
+#formulario {
     width: 300px;
     height: auto;
-    padding: 15px; 
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
+
+}
+
+#direita {
+    width: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#nome {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
-}
-
-#email {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
-}
-
-#senha {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
-}
-
-#senha_conf {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
-}
-
-#data_nasc {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
-    text-align: center;
-}
-
-#cidade {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
-    text-align: center;
-    cursor: pointer;
-}
-
 textarea {
-    line-height: 20px;
     width: 300px;
-    height: 90px;
-    resize: none;
+    height: 100px;
+    padding: 0px;
     border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
 }
 
-#cnh {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
 }
 
-#rg {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+p {
+    font-family: 'Robotocem', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
-#cpf {
-    width: 300px;
-    border:1px solid #ccc;
-    border-radius: 15px 15px 15px 15px;
+#l {
+    width: 100px;
+    height: auto;
 }
 
-input[type=submit]{
-    display: block;
-    background-color: #ccc;
-    width: auto;
-    height: 35px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
+#r {
+    width: 100px;
+    height: auto;
+}
+
+#login {
+    font-family: 'Robotocem', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#c {
+width: auto;
+height: auto;
+}
+
+#lTermos {
+    font-family: 'Robotocem', sans-serif;
+    text-decoration: none;
 }
