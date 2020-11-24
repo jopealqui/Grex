@@ -25,29 +25,7 @@
               return enderec;
             }
 
-            status = true;
-
-
-            Microsoft.Maps.Events.addHandler(directionsManager, 'directionsUpdated', function () {
-                    window.setTimeout(function () {
-                        directionsManager.clearAll();
-                        document.getElementById('printoutPanel').innerHTML = 'Directions cleared (Waypoints cleared, map/itinerary cleared, request and render options reset to default values)';
-                    }, 3000);
-                });
-
-
-            function calc()
-            {
-              if (status)
-              {
-
-                status = false;
-              }
-              else
-              {
-
-              }
-            }
+          
 
             function calc() {
             navigator.geolocation.getCurrentPosition(function (position) {
