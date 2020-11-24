@@ -17,12 +17,8 @@
   $rowU         = implode ("", $fetch_arrayU);
   $fetch_arrayM = mysqli_fetch_array($hashM);
   $rowM         = implode ("", $fetch_arrayM);
-
-  $pass = '$2y$10$D9.rDCkA5zGzffxNgPuGt.mHgTZJ2ycMLsJisZKffOPC9z.Ynt2Pu';
-
-  $decrypt =  password_verify('senha', $pass);
-
-  if ($decrypt)
+  
+  if (password_verify($senha, $rowM))
   {
     header('Location: pagina_motorista.html');
   }/*
@@ -30,7 +26,7 @@
   {
     header('Location: pagina_usuario.html');
   }*/
-  else
+  elseif (password_verify($senha, $rowU))
   {
     header('Location: pagina_usuario.html');
   }
