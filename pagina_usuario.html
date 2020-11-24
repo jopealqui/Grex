@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <script type='text/javascript'>
+	<script type='text/javascript'>
         var map;
         var directionsManager;
+        var paulista = "Avenida Paulista";
+        var fl = "Avenida Faria Lima"; 
 
         var enderec = "";
 
         function getText() {
             enderec = document.getElementById("endereco").value;
             document.getElementById("parag").innerHTML = enderec;
+            return enderec;
         }
 
-        var authorized = false;
-
-        while (document.getElementById("nome").value.length < 1) {
-            authorized = false;
-        }
-        if (document.getElementById("nome").value.length > 1) {
-            authorized = true;
-        }
-
-        function GetMap() {
+        function GetMap()
+        {
             map = new Microsoft.Maps.Map('#myMap', {});
 
-            if (authorized) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var loc = new Microsoft.Maps.Location(
-                        position.coords.latitude,
-                        position.coords.longitude);
+            navigator.geolocation.getCurrentPosition(function (position) {
+                loc = new Microsoft.Maps.Location( //coordenadas da localização atual do usuário
+                    position.coords.latitude,
+                    position.coords.longitude);
 
-                    //Add a pushpin at the user's location.
-                    var pin = new Microsoft.Maps.Pushpin(loc);
-                    map.entities.push(pin);
+                //Add a pushpin at the user's location.
+                //var pin = new Microsoft.Maps.Pushpin(loc);
+                //map.entities.push(pin);
 
-                    //Center the map on the user's location.
-                    map.setView({ center: loc, zoom: 15 });
-                });
-            }
-            function rota() {
-                //Load the directions module.
-                Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
-                    //Create an instance of the directions manager.
-                    directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
+                //Center the map on the user's location.
+                //map.setView({ center: loc, zoom: 15 });
+            });
 
-                    //Create waypoints to route between.
-                    var spWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: ",Rio de Janeiro, RJ" });
-                    directionsManager.addWaypoint(spWaypoint);
+            //Load the directions module.
+            Microsoft.Maps.loadModule('Microsoft.Maps.Directions', function () {
+                //Create an instance of the directions manager.
+                directionsManager = new Microsoft.Maps.Directions.DirectionsManager(map);
 
-                    var dkWaypoint = new Microsoft.Maps.Directions.Waypoint({ address: enderec });
-                    directionsManager.addWaypoint(dWaypoint);
+                //Create waypoints to route between.
+              //var origem_Waypoint = new Microsoft.Maps.Directions.Waypoint({ adress: loc.toString()}); //essa linha deveria funcionar porque o address está recebendo uma string
+                var origem_Waypoint = new Microsoft.Maps.Directions.Waypoint({ adress: paulista}); //essa linha funciona porque o address está recebendo uma string
+              //var origem_Waypoint = new Microsoft.Maps.Directions.Waypoint({ location: loc}); //parâmetro do tipo location por se tratar de coordenadas, segundo a documentação, deveria funcionar
+                directionsManager.addWaypoint(origem_Waypoint);
+                var destino_Waypoint = new Microsoft.Maps.Directions.Waypoint({ address: fl});
+              //var destino_Waypoint = new Microsoft.Maps.Directions.Waypoint({ adress: getText()}); //o porquê dessa linha não funcionar eu não faço a mínima ideia já que o retorno da função é do tipo string
+                directionsManager.addWaypoint(destino_Waypoint);
 
-                    //Add event handlers to directions manager.
-                    Microsoft.Maps.Events.addHandler(directionsManager, 'directionsError', directionsError);
-                    Microsoft.Maps.Events.addHandler(directionsManager, 'directionsUpdated', directionsUpdated);
+                //Add event handlers to directions manager.
+                Microsoft.Maps.Events.addHandler(directionsManager, 'directionsError', directionsError);
+                Microsoft.Maps.Events.addHandler(directionsManager, 'directionsUpdated', directionsUpdated);
 
-                    //Calculate directions.
-                    directionsManager.calculateDirections();
-                });
-            }
+                //Calculate directions.
+                directionsManager.calculateDirections();
+            });
         }
 
         function directionsUpdated(e) {
@@ -69,7 +62,7 @@
             var routeIdx = directionsManager.getRequestOptions().routeIndex;
 
             //Get the distance of the route, rounded to 2 decimal places.
-            var distance = Math.round(e.routeSummary[routeIdx].distance * 100) / 100;
+            var distance = Math.round(e.routeSummary[routeIdx].distance * 100)/100;
 
             //Get the distance units used to calculate the route.
             var units = directionsManager.getRequestOptions().distanceUnit;
@@ -77,8 +70,7 @@
 
             if (units == Microsoft.Maps.Directions.DistanceUnit.km) {
                 distanceUnits = 'km'
-            }
-            else {
+            } else {
                 //Must be in miles
                 distanceUnits = 'miles'
             }
@@ -93,17 +85,13 @@
             alert('Error: ' + e.message + '\r\nResponse Code: ' + e.responseCode)
         }
     </script>
-    <script type='text/javascript'
-        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnOeSZ6a7LgcnBLVjmZ4xfQWIWZjzKv7bDwgyRk-W4NlkGnZGQdk5atUjsunU5yH'
-        async defer></script>
+    <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnOeSZ6a7LgcnBLVjmZ4xfQWIWZjzKv7bDwgyRk-W4NlkGnZGQdk5atUjsunU5yH' async defer></script>
 </head>
-
 <body>
     <div id="myMap" style="position:relative;width:800px;height:600px;"></div>
     <div id='routeInfoPanel'></div>
     <input type="text" onkeyup="getText()" id="endereco">
-    <input type="submit" onclick="rota()" value="enviar">
+    <input type="submit" onclick="getText()" value="enviar">
     <p id="parag"></p>
 </body>
-
 </html>

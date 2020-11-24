@@ -32,7 +32,6 @@ CREATE TABLE Motorista (
     CNH INT NOT NULL,
     RG  INT NOT NULL,
     CPF INT NOT NULL,
-    Avaliacao FLOAT,
     PRIMARY KEY (ID_Motorista)
 ) CHARSET = utf8 ;
 

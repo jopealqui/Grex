@@ -7,7 +7,6 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="css/cadastro_usuario.css">
 </head>
-
 <body>
     <main>
         <div id="imagem">
@@ -17,7 +16,7 @@
             <div id="l"></div>
             <div id="formulario">
                 <h1 id="titulo">Faça seu cadastro</h1> <br>
-                <form name="usuario" accept-charset="UTF-8">
+                <form name="usuario" accept-charset="UTF-8" method="POST"	action="php/cadastro_usuario.php">
                     <label for="nome">Nome: </label> <br>
                     <input name="nome" required="required" id="nome" type="text" autofocus>
 
@@ -44,24 +43,28 @@
                     <br><br>
 
                     <label for="limitacao">Descreva sua limitação: </label> <br>
-                    <textarea name="limitacao" cols="30" rows="10" required></textarea>
+                    <textarea name="limitacao" name="limitacao" cols="30" rows="10" required></textarea>
 
                     <br><br>
 
                     <p>Necessita de acompanhante?</p> <br>
-                    <input type="radio" name="opcao" id="sim" value="sim"><label for="sim">Sim</label>
-                    <input type="radio" name="opcao" id="nao" value="nao" checked><label for="nao">Não</label>
+                    <input type="radio" name="acompanhante" id="sim" value="TRUE"><label for="sim">Sim</label>
+                    <input type="radio" name="acompanhante" id="nao" value="FALSE" checked><label for="nao">Não</label>
+
+                    <br><br>
+
+                    <input type="checkbox" name="termos" id="termos" value="TRUE"><label for="termos" id="lTermos">Li e concordo com os <a href="termosM.html">Termos de uso e privacidade</a></label>
 
                     <br><br>
 
                     <input type="submit" id="cadastrar" value="Cadastrar">
 
                     <br><br>
-    
+
                 </form>
             </div>
             <div id="r"></div>
-            <br><br>    
+            <br><br>
             <a href="login.html" id="login">
                 <p>Já tem uma conta? Faça login</p>
             </a>

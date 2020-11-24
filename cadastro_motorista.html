@@ -14,58 +14,79 @@
 </head>
 
 <body>
-    <h1>Cadastro do motorista</h1>
-    <br><br>
-    <div id="main">
-        <div id="first"></div>
-        <div class="back_cad">
-            <form name="motorista" accept-charset="UTF-8" method="POST"	action="php/cadastro_motorista.php">
-                <label for="nome">Nome: </label> <br>
-                <input name="nome" required="required" id="nome" placeholder="&nbsp Nome completo" type="text"
-                    autofocus>
-
-                <br><br>
-
-                <label for="email">E-mail: </label> <br>
-                <input name="email" required="required" id="email" placeholder="&nbsp Email" type="text">
-
-                <br><br>
-
-                <label for="senha">Senha: </label> <br>
-                <input name="senha" required="required" id="senha" placeholder="&nbsp Senha" type="password">
-
-                <br><br>
-
-                <label for="senha_conf">Confirme sua senha: </label> <br>
-                <input name=senha_conf required="required" id="senha_conf" placeholder="&nbsp Confirme sua senha" type="password">
-
-                <br><br>
-
-                <label for="data_nasc">Data de nascimento: </label> <br>
-                <input name=data_nasc required="required" id="data_nasc" placeholder="&nbsp Nome completo" type="date">
-
-                <br><br>
-
-                <label for="cnh">CNH: </label> <br>
-                <input name=cnh required="required" id="cnh" placeholder="&nbsp CNH" type="number" size="11">
-
-                <br><br>
-
-                <label for="rg">RG: </label> <br>
-                <input name=rg required="required" id="rg" placeholder="&nbsp RG" type="number">
-
-                <br><br>
-
-                <label for="cpf">CPF: </label> <br>
-                <input name=cpf required="required" id="cpf" placeholder="&nbsp CPF" type="number">
-
-                <br><br>
-
-                <input type="submit" id="cadastrar" value="Continuar cadastro">
-            </form>
+    <main>
+        <div id="imagem">
+            <img src="css/img/motorista.fw.png"
+                id="motorista" alt="motorista">
         </div>
-        <div id="third"></div>
-    </div>
+        <div id="direita">
+            <div id="l"></div>
+            <div id="formulario">
+                <h1 id="titulo">Faça seu cadastro</h1> <br>
+                <div id="main">
+                    <div id="first"></div>
+                    <div class="back_cad">
+                        <form name="motorista" accept-charset="UTF-8" method="POST" action="php/cadastro_motorista.php">
+                            <label for="nome">Nome: </label> <br>
+                            <input name="nome" required="required" id="nome" type="text" autofocus>
+
+                            <br><br>
+
+                            <label for="email">E-mail: </label> <br>
+                            <input name="email" required="required" id="email" placeholder="&nbsp Email" type="text">
+
+                            <br><br>
+
+                            <label for="senha">Senha: </label> <br>
+                            <input name="senha" required="required" id="senha" placeholder="&nbsp Senha"
+                                type="password">
+
+                            <br><br>
+
+                            <label for="senha_conf">Confirme sua senha: </label> <br>
+                            <input name=senha_conf required="required" id="senha_conf"
+                                placeholder="&nbsp Confirme sua senha" type="password">
+
+                            <br><br>
+
+                            <label for="data_nasc">Data de nascimento: </label> <br>
+                            <input name=data_nasc required="required" id="data_nasc" placeholder="&nbsp Nome completo"
+                                type="date">
+
+                            <br><br>
+
+                            <label for="cnh">CNH: </label> <br>
+                            <input name=cnh required="required" id="cnh" placeholder="&nbsp CNH" type="number"
+                                size="11">
+
+                            <br><br>
+
+                            <label for="rg">RG: </label> <br>
+                            <input name=rg required="required" id="rg" placeholder="&nbsp RG" type="number">
+
+                            <br><br>
+
+                            <label for="cpf">CPF: </label> <br>
+                            <input name=cpf required="required" id="cpf" placeholder="&nbsp CPF" type="number">
+
+                            <br><br>
+
+                            <input type="checkbox" name="termos" id="termos" value="TRUE"><label for="termos"
+                                id="lTermos">Li e concordo com os <a href="termosU.html">Termos de uso e
+                                    privacidade</a></label>
+
+                            <br><br>
+
+                            <input type="submit" id="cadastrar" value="Continuar cadastro">
+                        </form>
+                    </div>
+                    <div id="r"></div>
+                    <br><br>
+                    <a href="login.html" id="login">
+                        <p>Já tem uma conta? Faça login</p>
+                    </a>
+                </div>
+    </main>
 </body>
 
 </html>

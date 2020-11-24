@@ -7,38 +7,51 @@
     <title>Cadastro</title>
     </title>
     <link rel="icon" href="">
+    <link rel="stylesheet" href="css/carro.css">
 </head>
 
 <body>
-    <h1>informações do veículo</h1>
-    <form name="carro" accept-charset="UTF-8">
-        <label for="modelo">Modelo: </label> <br>
-        <input name="modelo" required="required" placeholder="digite o modelo" type="text" autofocus>
+    <main>
+        <div id="imagem">
+            <img src="css/img/phpThumb_generated_thumbnail.jpeg"
+                id="motorista" alt="motorista">
+        </div>
+        <div id="direita">
+            <div id="l"></div>
+            <div id="formulario">
+                <h1 id="titulo">Dados do carro</h1> <br>
+                <form name="carro" accept-charset="UTF-8" method="POST" action="php/carro.php">
+                    <label for="modelo">Modelo: </label> <br>
+                    <input name="modelo" id="modelo" required="required" type="text" autofocus>
 
-        <br><br>
+                    <br><br>
 
-        <label for="ano">Ano: </label> <br>
-        <input name="ano" required="required" placeholder="digite o ano do carro" type="number">
+                    <label for="ano">Ano: </label> <br>
+                    <input name="ano" id="ano" required="required" type="number">
 
-        <br><br>
+                    <br><br>
 
-        <label for="placa">Placa: </label> <br>
-        <input name="placa" required="required" placeholder="placa do carro" type="text">
+                    <label for="placa">Placa: </label> <br>
+                    <input name="placa" id="placa" required="required" type="text">
 
-        <br><br>
+                    <br><br>
 
-        <label for="assentos">Assentos: </label> <br>
-        <input name="assentos" required="required" placeholder="número de assentos no automóvel" type="number">
+                    <label for="assentos">Assentos: </label> <br>
+                    <input name="assentos" id="assentos" required="required" type="number">
 
-        <br><br>
+                    <br><br>
 
-        <label for="cor">Cor: </label> <br>
-        <input name="cor" required="required" placeholder="digite a cor do veíulo" type="text">
+                    <label for="cor">Cor: </label> <br>
+                    <input name="cor" id="cor" required="required" type="text">
 
-        <br><br>
+                    <br><br>
 
-        <input type="submit" id="cadastrar" value="Cadastrar">
-    </form>
+                    <input type="submit" id="cadastrar" value="Concluir cadastro">
+                </form>
+            </div>
+            <div id="r"></div>
+        </div>
+    </main>
 </body>
 
 </html>
