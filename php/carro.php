@@ -1,3 +1,10 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
 <?php
 $modelo    = $_POST['modelo'];
 $ano       = $_POST['ano'];
@@ -29,3 +36,8 @@ echo "Conexão feita com sucesso";
 $insert = "INSERT INTO carro(Modelo, Ano, Placa, Lugares, Cor) VALUES ('$modelo', '$ano', '$placa', '$assentos', '$cor')";
 mysqli_query($conexao, $insert);
 ?>
+<script>
+        window.location.href = "../pagina_motorista.html";
+</script>
+</body>
+</html>
