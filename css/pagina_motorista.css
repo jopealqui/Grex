@@ -10,37 +10,63 @@ body {
 }
 
 #check:checked ~ .barra {
-	-webkit-transform: translate(300px);
-	   -moz-transform: translate(300px);
-	    -ms-transform: translate(300px);
-	     -o-transform: translate(300px);
-	        transform: translate(300px);
+	-webkit-transform: translate(400px);
+	   -moz-transform: translate(400px);
+	    -ms-transform: translate(400px);
+	     -o-transform: translate(400px);
+	        transform: translate(400px);
+}
+
+.edge {
+	display: none;
+}
+
+.edge--visible {
+	display: block;
+}
+
+#price {
+	width: 260px;
+	height: 60px;
+  z-index: 9997;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .icone {
 	font-size: 30px;
 	position: fixed;
-  margin: 15px;
+  margin: 12px;
 	z-index: 9998;
 	cursor: pointer;
 }
 
 .barra {
-	width: 300px;
-	height: 100%;
+	width: auto;
+	height: auto;
 	position: absolute;
   z-index: 9997;
-	background-color: white;
-	left: -300px;
+	left: -400px;
 	-webkit-transition: all .25s linear;
 	   -moz-transition: all .25s linear;
 	    -ms-transition: all .25s linear;
 	     -o-transition: all .25s linear;
-	        transition: all .25s linear;
+          transition: all .25s linear;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
+  align-items: center;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+#bPrice {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 #lEndereco {
@@ -62,19 +88,24 @@ br {
     width: 260px;
     height: 30px;
     padding: 0px;
-    border:1px solid #ccc;
+		border: 0px;
+		margin-top: 14px;
+		margin-bottom: 5px;
     border-radius: 10px 10px 10px 10px;
 }
 
-#enviar {
-    height: 35px;
-    width: 260px;
+#botao {
+    height: 28px;
+    width: auto;
     text-align: center;
     background: black;
     color: white;
-    border-radius: 10px 10px 10px 10px;
+		margin-top: 8px;
+    border-radius: 5px 5px 5px 5px;
     border: 0px;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -82,7 +113,13 @@ a {
   color: black;
 }
 
-#grex {
+#calcular {
     font-family: 'Roboto', sans-serif;
-    width: 100px;
+}
+
+#entrada {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

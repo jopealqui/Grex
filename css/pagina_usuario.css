@@ -1,17 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Segoe UI', Helvetica, Arial, Sans-Serif
+	margin: 0px;
+	padding: 0px;
 }
 
-#maps {
-    width: auto;
-    border: 0px;
-    margin: 0px;
+#check {
+	display: none;
+}
+
+#check:checked ~ .barra {
+	-webkit-transform: translate(400px);
+	   -moz-transform: translate(400px);
+	    -ms-transform: translate(400px);
+	     -o-transform: translate(400px);
+	        transform: translate(400px);
+}
+
+.edge {
+	display: none;
+}
+
+.edge--visible {
+	display: block;
+}
+
+#price {
+	width: 260px;
+	height: 60px;
+  z-index: 9997;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.icone {
+	font-size: 30px;
+	position: fixed;
+  margin: 12px;
+	z-index: 9998;
+	cursor: pointer;
+}
+
+.barra {
+	width: auto;
+	height: auto;
+	position: absolute;
+  z-index: 9997;
+	left: -400px;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+          transition: all .25s linear;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+#bPrice {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+#lEndereco {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+#principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+br {
+  height: 10px;
+}
+
+#endereco {
+    width: 260px;
+    height: 30px;
     padding: 0px;
+		border: 0px;
+		margin-top: 14px;
+		margin-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-#input {
-    width: 380px;
+#botao {
+    height: 28px;
+    width: auto;
+    text-align: center;
+    background: black;
+    color: white;
+		margin-top: 8px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#calcular {
+    font-family: 'Roboto', sans-serif;
+}
+
+#entrada {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
