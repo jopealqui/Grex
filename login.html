@@ -2,43 +2,40 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
-    <main>
-        <div id="imagem">
-            <img src="../css/img/driver3.fw.png" id="motorista" alt="motorista">
-        </div>
-        <div id="direita">
-            <div id="l"></div>
-            <div id="formulario">
-                <h1 id="titulo">Faça login na sua conta</h1> <br>
-                <form method="POST" action="login.php">
-                    <label for="email" id="lEmail">E-mail: </label> <br>
-                    <input name="email" required="required" id="email" placeholder="&nbsp Email" type="text">   <br><br>
+  <main>
+    <div id="imagem">
+      <div id="formulario">
+        <h1 id="titulo">Faça login na sua conta</h1> <br>
+        <form method="POST" action="login.php">
+            <label for="email" id="lEmail">E-mail: </label> <br>
+            <input name="email" required="required" id="email" placeholder="&nbsp Email" type="text"> <br><br>
 
-                    <label for="senha" id="lSenha">Senha: </label> <br>
-                    <input name="senha" required="required" id="senha" placeholder="&nbsp Senha" type="password"> <br><br>
+            <label for="senha" id="lSenha">Senha: </label> <br>
+            <input name="senha" required="required" id="senha" placeholder="&nbsp Senha" type="password"> <br><br>
 
-                    <input type="submit" id="entrar" value="Entrar"> <br><br>
+            <input type="submit" id="entrar" value="Entrar"> <br><br>
 
-                    <div id="lembrar_esqueceu">
-                        <div id="check">
-                            <input type="checkbox" name="lembrar"> <p  id="lembrar">Lembrar</p>
-                        </div>
-                        <a href="recuperacao1.html" id="esqueceu">Esqueceu sua senha?</a>
-                    </div>
-                </form>
-            </div>
-            <div id="r"></div>
-
-            <a href="escolha.html" id="cadastro"><p>Não tem uma conta? Cadastre-se gratuitamente</p></a>
-        </div>
-    </main>
+            <div id="lembrar_esqueceu">
+              <div id="check">
+                <input type="checkbox" name="lembrar">
+                <p id="lembrar">Lembrar</p>
+              </div>
+              <a href="recuperacao1.html" id="esqueceu">Esqueceu sua senha?</a>
+            </div> <br><br>
+          <a href="escolha.html" id="cadastro">
+            <p>Não tem uma conta? Cadastre-se gratuitamente</p>
+          </a>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
