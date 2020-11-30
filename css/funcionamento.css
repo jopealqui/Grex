@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  width: 70%;
+  height: 70%;
+  margin-bottom: 15px;
+  border-radius: 3%;
+}

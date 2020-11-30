@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
 
 body {
     background-color: white;
@@ -11,10 +8,6 @@ body {
 a {
     text-decoration: none;
     color: black;
-}
-
-h3 {
-  margin: 0px;
 }
 
 header {
@@ -32,12 +25,6 @@ header {
     background-color: #5db0e0;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 #grex {
     font-family: 'Roboto', sans-serif;
     width: 100px;
@@ -45,64 +32,16 @@ nav {
     margin-right: 35px;
 }
 
-#slogan {
-  font-family: 'Roboto', sans-serif;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
-#menu {
-    width: 350px;
-}
-
 #l {
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 800px
 }
 
-#principal {
-    width: 1349px;
-    height: 620px;
-    background-image: url("img/back.fw.png");
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-#texto {
-  margin-top: 80px;
-  width: 583px;
-}
-
-#direita {
-  width: 583px;
-}
-
-.links {
-  font-family: 'Roboto', sans-serif;
-}
-
-#foto {
-    width: 626px;
-    height: 433px;
-}
-
-#middle {
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-}
-
-#driver_text {
-    font-family: 'Montserrat', sans-serif;
-}
-
-#pags {
-    text-decoration: none;
-    display: inline;
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .botao {
@@ -115,6 +54,28 @@ p {
     border: 0px;
     font-family: 'Roboto', sans-serif;
     margin-right: 10px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
+    resize: none;
+}
+
+#enviar {
+  height: 35px;
+  width: 300px;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 20px 20px 20px 20px;
+  border: 0px;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 10px;
 }
 
 footer {
@@ -160,28 +121,27 @@ footer {
   margin-right: 10px;
 }
 
-#snd-slogan-line {
-  display: flex;
-  justify-content: center;
-  height: 70px;
-  align-items: center;
-}
-
-#snd-slogan {
-  font-family: 'Castoro', serif;
-  height: 70px;
-}
-
-.um {
+#principal {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
 }
 
-.Frase {
-  word-wrap: break-word;
-  width: 360px;
-  height: auto;
-  font-family: 'Roboto', sans-serif;
+#lf {
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+
+#rt {
+height: 100px;
+width: 200px;
+}
+
+.entrada {
+    width: 300px;
+    height: 30px;
+    padding: 0px;
+    border:1px solid #ccc;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Robototres', sans-serif;
 }

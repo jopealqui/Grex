@@ -14,7 +14,7 @@ main {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -22,40 +22,6 @@ main {
     margin: 0px;
     width: auto;
     height: auto;
-}
-
-#nome {
-    width: 300px;
-    height: 30px;
-    padding: 0px;
-    border:1px solid #ccc;
-    border-radius: 10px 10px 10px 10px;
-    font-family: 'Robototres', sans-serif;
-}
-
-#email {
-    width: 300px;
-    height: 30px;
-    padding: 0px;
-    border:1px solid #ccc;
-    border-radius: 10px 10px 10px 10px;
-    font-family: 'Robototres', sans-serif;
-}
-
-#senha {
-    width: 300px;
-    height: 30px;
-    padding: 0px;
-    border:1px solid #ccc;
-    border-radius: 10px 10px 10px 10px;
-}
-
-#senha_conf {
-    width: 300px;
-    height: 30px;
-    padding: 0px;
-    border:1px solid #ccc;
-    border-radius: 10px 10px 10px 10px;
 }
 
 #data_nasc {
@@ -68,25 +34,7 @@ main {
     font-family: 'Robototres', sans-serif;
 }
 
-#cnh {
-    width: 300px;
-    height: 30px;
-    padding: 0px;
-    border:1px solid #ccc;
-    border-radius: 10px 10px 10px 10px;
-    font-family: 'Robototres', sans-serif;
-}
-
-#rg {
-    width: 300px;
-    height: 30px;
-    padding: 0px;
-    border:1px solid #ccc;
-    border-radius: 10px 10px 10px 10px;
-    font-family: 'Robototres', sans-serif;
-}
-
-#cpf {
+.entrada {
     width: 300px;
     height: 30px;
     padding: 0px;
@@ -128,7 +76,8 @@ textarea {
     border:1px solid #ccc;
     border-radius: 10px 10px 10px 10px;
     font-family: 'Robototres', sans-serif;
-}
+    resize: none;
+  }
 
 
 h1 {
