@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
     background-color: white;
@@ -15,14 +16,27 @@ a {
 
 h3 {
   margin: 0px;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+
+}
+
+main {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
 }
 
 header {
     height: auto;
+    width: 100%;
     top: 0;
     right: 0;
     padding: 0px;
-    margin 0px;
+    margin: 0px;
     left: 0;
     z-index: 2;
     display: flex;
@@ -70,6 +84,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin-bottom: 15px;
 }
 
 #texto {
@@ -123,7 +138,7 @@ footer {
     background-color: #5db0e0;
     margin-left: 0px;
     margin-bottom: 0px;;
-    margin right: 0px;
+    margin-right: 0px;
     margin-top: 20px;
     bottom: 0px;
     right:  0px;
@@ -181,7 +196,15 @@ footer {
 
 .Frase {
   word-wrap: break-word;
-  width: 360px;
+  text-align: justify;
+  font-size: 25px;
+  width: 380px;
   height: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
+.titulo {
+  font-weight: normal;
+}
+
+  
