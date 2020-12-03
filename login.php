@@ -1,23 +1,4 @@
 <?php
-/*  $servername = "localhost:3306";
-  $username   = "root";
-  $password   = "";
-  $database   = "db_sc";
-
-  $conexao = mysqli_connect($servername, $username, $password, $database);
-
-  $email = $_POST['email'];
-
-  $consultaU     = "SELECT CAST(AES_DECRYPT(senha,'key') as char) FROM usuario WHERE email = '$email'";
-  $consultaM     = "SELECT CAST(AES_DECRYPT(senha,'key') as char) FROM motorista WHERE email = '$email'";
-  $senhaU        = mysqli_query($conexao, $consultaU);
-  $senhaM        = mysqli_query($conexao, $consultaM);
-/*$fetch_arrayU = mysqli_fetch_array($hashU);
-  $rowU         = implode ($fetch_arrayU);
-  $fetch_arrayM = mysqli_fetch_array($hashM);
-  $rowM         = implode ($fetch_arrayM);
-*/
-
   $host     = 'localhost:3306';
   $user     = 'root';
   $passwd   = '';
