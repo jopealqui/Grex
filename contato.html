@@ -9,7 +9,12 @@
   <link rel="stylesheet" href="css/contato.css">
   <script type="text/javascript">
     function aviso() {
-      document.getElementById("aviso").innerHTML = 'Sua mensagem foi enviada.';
+      if (document.getElementById("nome").value == "" || document.getElementById("email").value == "" || document.getElementById("msg").value == "") {
+        document.getElementById("aviso").innerHTML = 'Preencha os campos obrigatórios.';
+      }
+      else {
+        document.getElementById("aviso").innerHTML = 'Sua mensagem foi enviada.';
+      }
     }
   </script>
 </head>
@@ -30,7 +35,6 @@
 
     <div id="principal">
       <div id="lf">
-        <form class="" action="" method="post">
           <h1 class="font">Contato</h1>
           <label for="nome" class="font">Nome* </label> <br>
           <input name="nome" required="required" id="nome" class="entrada" type="text" autofocus>
@@ -57,7 +61,6 @@
           <br><br>
 
           <h3 id="aviso" class="font"></h3>
-        </form>
       </div>
 
       <div id="rt"></div>
@@ -69,9 +72,6 @@
           <h2 class="font">Empresa</h2>
           <a href="sobre.html">
             <p class="font">Sobre a Grex</p>
-          </a>
-          <a href="equipe.html">
-            <p class="font">Equipe</p>
           </a>
           <a href="contato.html">
             <p class="font">Contato</p>

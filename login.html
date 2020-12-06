@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="../css/login.css">
 </head>
-
 <body>
   <main>
-    <div id="imagem">
+    <div id="imagem"></div>
+
+    <section id="direita" class="flex-container">
+      <div class="lado"></div>
       <div id="formulario">
         <h1 id="titulo">Faça login na sua conta</h1> <br>
         <form method="POST" action="login.php">
@@ -29,13 +30,13 @@
               </div>
               <a href="recuperacao1.html" id="esqueceu">Esqueceu sua senha?</a>
             </div> <br><br>
-          <a href="escolha.html" id="cadastro">
-            <p>Não tem uma conta? Cadastre-se gratuitamente</p>
-          </a>
         </form>
+        <div class="lado"></div>
+        <a href="escolha.html" id="cadastro">
+          <p>Não tem uma conta? Cadastre-se gratuitamente</p>
+        </a>
       </div>
-    </div>
+    </section>
   </main>
 </body>
-
 </html>
