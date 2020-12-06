@@ -11,11 +11,52 @@
 #motorista {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
+  display: block;
   color: black;
+  width: 500px;
+  height: 450px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 #passageiro {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
   color: black;
+  width: 500px;
+  height: 450px;
+}
+
+#motorista:hover {
+  color: white;
+}
+
+#passageiro:hover {
+  color: white;
+}
+
+#dmotorista {
+  width: 500px;
+  height: 450px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+#dpassageiro {
+  width: 500px;
+  height: 450px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+#dmotorista:hover {
+  background-image: url("img/motorista.fw.png");
+}
+
+#dpassageiro:hover {
+  background-image: url("img/passageiros.fw.png");
 }

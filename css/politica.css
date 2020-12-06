@@ -11,3 +11,7 @@ main {
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
 }
+
+#equipe {
+  float: left;
+}
