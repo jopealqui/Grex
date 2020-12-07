@@ -6,10 +6,21 @@ body {
 }
 
 #grex {
-	margin-top: 665px;
+	height: 100vh;
 	margin-left: 55px;
 	z-index: 9998;
+	cursor: pointer;
+	display: flex;
+	align-content: flex-end; 
 }
+
+.icone2 {
+	z-index: 9998;
+	cursor: pointer;
+	align-self: end;
+	margin-bottom: 8px;
+}
+
 
 #sub {
 	width: auto;
@@ -57,11 +68,6 @@ a {
 	font-size: 30px;
 	position: fixed;
   margin: 12px;
-	z-index: 9998;
-	cursor: pointer;
-}
-
-.icone2 {
 	z-index: 9998;
 	cursor: pointer;
 }

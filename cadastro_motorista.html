@@ -1,23 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <!--link css motorista-->
     <link rel="stylesheet" href="css/cadastro_motorista.css">
-    <!--f-->
+    <link rel="stylesheet" href="css/cadastro_usuario.css">
+    <link rel="icon" href="css/img/favicon.fw.png">
     <script>
-
+        function abrir() {
+            var div = document.getElementById('tm');
+            div.classList.add('abs');
+            div.classList.remove('n');
+        }
+        function fechar() {
+            var div = document.getElementById('tm');
+            div.classList.add('n');
+            div.classList.remove('abs');
+        }
     </script>
 </head>
-
 <body>
     <main>
         <div id="imagem">
-            <img src="css/img/motorista.fw.png"
-                id="motorista" alt="motorista">
+            <img src="css/img/motorista.fw.png" id="motorista" alt="motorista">
+        </div>
+        <div id="tm" class="n">
+            <h1 class="font">Termos e condições de uso</h1>
+            <p id="texto">
+                1. Aceitação dos Termos e Condições de Uso<br>
+
+                Para fazer uso da ferramenta é preciso: (i) ler atentamente os termos descritos abaixo; (ii) concordar
+                expressamente com eles; e (iii) fornecer um dados verdadeiros
+                ao se cadastrar no Site.
+                Ao fazer uso da ferramenta oferecida pela Grex, você (a partir de agora denominado Usuário) concorda que
+                leu,
+                entendeu e aceitou os termos, regras e
+                condições aqui dispostos.
+
+                A Grex se reserva o direito de modificar a qualquer momento a apresentação, configuração e
+                disponibilização da
+                Ferramenta e ou do Site. O mesmo se aplica
+                a estes Termos e Condições de Uso, estabelecidos como condição fundamental para a utilização do serviço.
+                <br><br>
+
+                2. Gratuidade <br>
+
+                A Ferramenta é oferecida ao Usuário de forma gratuita, pagando apenas pelo serviço de
+                transporte.<br><br>
+
+                3. Registro e dados pessoais <br>
+
+                É dever do Usuário manter atualizados os dados pessoais fornecidos. A Empresa pode cancelar qualquer
+                registro do
+                Usuário, a qualquer momento e sem prévio
+                aviso, assim que tiver conhecimento, e a seu exclusivo critério, se o Usuário descumprir,
+                intencionalmente ou não,
+                estes Termos e Condições de Uso, ou violar
+                leis e regulamentos federais, estaduais e/ou municipais, ou violar os princípios legais, a moral e os
+                bons
+                costumes. Os Usuários que tiverem seus registros
+                cancelados não poderão mais utilizar a Ferramenta. <br><br>
+
+                4. Legislação aplicável <br>
+
+                Estes Termos e Condições de Uso são governados e interpretados segundo as leis da República Federativa
+                do Brasil e
+                todas as disputas, ações e outros assuntos
+                relacionados serão determinados de acordo com essa legislação.
+            </p>
+
+            <h1 class="font">Política de privacidade</h1> <br>
+            <p id="texto" class="font">
+                &nbsp; &nbsp; &nbsp; &nbsp;A sua privacidade é importante para nós. Solicitamos informações pessoais
+                apenas quando
+                realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu
+                conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.<br>
+
+                &nbsp; &nbsp; &nbsp; &nbsp;Apenas retemos as informações coletadas pelo tempo necessário para fornecer o
+                serviço
+                solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar
+                perdas e
+                roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados. <br>
+
+                &nbsp; &nbsp; &nbsp; &nbsp;Não compartilhamos informações de identificação pessoal publicamente ou com
+                terceiros,
+                exceto quando exigido por lei. <br>
+
+                &nbsp; &nbsp; &nbsp; &nbsp;O nosso site pode ter links para sites externos que não são operados por nós.
+                Esteja
+                ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar
+                responsabilidade
+                por suas respectivas políticas de privacidade. <br>
+
+                &nbsp; &nbsp; &nbsp; &nbsp;Você é livre para recusar a nossa solicitação de informações pessoais,
+                entendendo que
+                talvez não possamos fornecer alguns dos serviços desejados. <br>
+
+                &nbsp; &nbsp; &nbsp; &nbsp;O uso continuado de nosso site será considerado como aceitação de nossas
+                práticas em
+                torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do
+                usuário e
+                informações pessoais, entre em contato conosco.
+            </p> <br>
+
+            <button onclick="fechar()" id="fechar">Fechar</button>
         </div>
         <div id="direita">
             <div id="l"></div>
@@ -72,23 +159,17 @@
                             <input name=cpf required="required" id="cpf" placeholder="&nbsp CPF" type="number">
 
                             <br><br>
-
-                            <input type="checkbox" name="termos" id="termos" value="TRUE"><label for="termos"
-                                id="lTermos">Li e concordo com os <a href="termosU.html">Termos de uso e
-                                    privacidade</a></label>
-
-                            <br><br>
-
                             <input type="submit" id="cadastrar" value="Continuar cadastro">
                         </form>
+                        <button id="tmb" class="lTermos" onclick="abrir()">Ao se cadastrar você confirma que leu e concordou com todos os Termos de uso e privacidade.</button>
                     </div>
                     <div id="r"></div>
                     <br><br>
-                    <a href="login.html" id="login">
-                        <p>Já tem uma conta? Faça login</p>
-                    </a>
                 </div>
+                <a href="login.html" id="login">
+                    Já tem uma conta? Faça login
+                </a>
+            </div>
     </main>
 </body>
-
 </html>

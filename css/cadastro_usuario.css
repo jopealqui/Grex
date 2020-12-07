@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Robototres:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Robotocem:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
     margin: 0px;
@@ -52,6 +53,8 @@ main {
     border-radius: 10px 10px 10px 10px;
     border: 0px;
     font-family: 'Robototres', sans-serif;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
 #formulario {
@@ -108,6 +111,7 @@ p {
     font-family: 'Robotocem', sans-serif;
     text-decoration: none;
     color: black;
+    margin-top: 10px;
 }
 
 #c {
@@ -115,7 +119,64 @@ width: auto;
 height: auto;
 }
 
-#lTermos {
+.lTermos {
     font-family: 'Robotocem', sans-serif;
     text-decoration: none;
+}
+
+#tmb {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.abs {
+    display: absolute;
+}
+
+.n {
+    display: none;
+}
+
+#texto {
+    text-align: justify;
+    width: 720px;
+    margin-left: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.open {
+    font-family: 'Open Sans', sans-serif;
+    color: blue;
+    font-size: 14px;
+}
+
+#tm {
+    position: absolute; 
+    width: 800px; 
+    height: 602px; 
+    margin-left: 284px;
+    background-color: #FFF;
+    border-radius: 25px 25px 25px 25px;
+    border:1px solid #ccc;
+    color: black;
+    text-align: center;
+    z-index: 1000;
+    overflow:auto; 
+}
+
+#fechar {
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px;
+    font-family: 'Robototres', sans-serif;
+    cursor: pointer;
+    margin-bottom: 10px;
 }

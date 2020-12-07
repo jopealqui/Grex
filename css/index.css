@@ -53,6 +53,7 @@ nav {
     width: 100px;
     margin-left: 25px;
     margin-right: 35px;
+    cursor: pointer;
 }
 
 #slogan {
@@ -126,6 +127,7 @@ p {
     border: 0px;
     font-family: 'Roboto', sans-serif;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 footer {

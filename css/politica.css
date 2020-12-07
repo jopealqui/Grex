@@ -12,6 +12,15 @@ main {
   font-family: 'Open Sans', sans-serif;
 }
 
+#texto2 {
+  width: 1000px;
+  height: auto;
+  word-wrap: break-word;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
 #equipe {
   float: left;
 }

@@ -74,6 +74,7 @@ main {
     border-radius: 10px 10px 10px 10px;
     border: 0px;
     font-family: 'Robototres', sans-serif;
+    cursor: pointer;
 }
 
 #imagem {
